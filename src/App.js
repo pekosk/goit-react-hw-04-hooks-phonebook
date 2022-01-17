@@ -28,6 +28,7 @@ function App() {
   useEffect(() => {
     const contacts = JSON.parse(localStorage.getItem("contacts"));
     if (contacts.length !== contacts.length) {
+      console.log(contacts);
       localStorage.setItem("contacts", JSON.stringify(contacts));
     }
   }, [contacts]);
